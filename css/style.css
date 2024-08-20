@@ -53,6 +53,10 @@ a {
     font-size: 17px;
 }
 
+.burger {
+    display: none;
+}
+
 .slider {
     display: flex;
     padding: 186px 69px 1188px 64px;
@@ -278,7 +282,6 @@ a {
     .main {
         margin-left: 138px;
         margin-right: 138px;
-        gap: 200px;
     }
 
     .guide__content {
@@ -312,24 +315,8 @@ a {
     .social {
         min-width: 173px;
     }
-
-    .social__icon {
-        width: 24px;
-        height: 24px;
-        transform: rotate(-90deg);
-    }
-
     .slider__content {
         max-width: 653px;
-    }
-
-    .section__title {
-        font-weight: 800;
-        font-size: 18px;
-        letter-spacing: 0.33em;
-        margin-left: 104px;
-        color: #fbd784;
-        position: relative;
     }
 
     .slider__title {
@@ -350,7 +337,6 @@ a {
         flex-direction: column;
         margin-left: 32px;
         margin-right: 32px;
-        gap: 200px;
     }
 
     .guide {
@@ -397,16 +383,102 @@ a {
         margin: 77px 32px 72px 32px;
         gap: 57px;
     }
-    
+
     .company__text {
         font-size: 16px;
     }
-    
+
     .copyright {
         font-size: 16px;
     }
-    
+
     .footer__links > a {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 40px;
+        height: 37px;
+        background: url("../img/icons/menu.svg") no-repeat;
+    }
+
+    .slider {
+        padding: 164px 48px 1188px 0px;
+    }
+
+    .slider__content {
+        max-width: 517px;
+    }
+
+    .slider__title {
+        font-size: 43px;
+        line-height: 227%;
+    }
+
+    .slider__page label {
+        font-size: 16px;
+    }
+
+    
+
+    .guide__content {
+        margin: 161px 35px 45px 35px;
+    }
+
+    .guide:nth-child(even) > .guide__content {
+        margin: 161px 35px 45px 35px;
+    }
+
+    .guide__number {
+        top: -175px;
+        left: -20px;
+    }
+
+    .guide__title {
+        font-weight: 600;
+        font-size: 40px;
+        max-width: 550px;
+    }
+
+    .guide__text {
+        font-size: 16px;
+        line-height: 200%;
+        width: 632px;
+    }
+
+    .guide__img {
+        width: 704px;
+        height: 934px;
+        margin: 0;
+    }
+
+    .footer {
+        margin: 95px 35px 38px 29px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .company {
+        flex: 0;
+    }
+
+    .company__text {
+        width: 263px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        width: 293px;
     }
 }
