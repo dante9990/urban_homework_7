@@ -275,7 +275,6 @@ a {
 }
 
 @media (max-width: 1536px) {
-
     .main {
         margin-left: 138px;
         margin-right: 138px;
@@ -298,5 +297,116 @@ a {
     .guide__img {
         width: 488px;
         height: 765px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__menu {
+        padding: 64px 62px 0 61px;
+    }
+
+    .slider {
+        padding: 204px 48px 1188px 0px;
+    }
+
+    .social {
+        min-width: 173px;
+    }
+
+    .social__icon {
+        width: 24px;
+        height: 24px;
+        transform: rotate(-90deg);
+    }
+
+    .slider__content {
+        max-width: 653px;
+    }
+
+    .section__title {
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.33em;
+        margin-left: 104px;
+        color: #fbd784;
+        position: relative;
+    }
+
+    .slider__title {
+        font-size: 60px;
+        line-height: 167%;
+        text-transform: capitalize;
+    }
+
+    .wrapper {
+        position: absolute;
+        z-index: 1;
+        top: 1303px;
+        background: linear-gradient(180deg, rgba(11.48, 29.32, 38.25, 0) 0%, #0b1d26 7%);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        margin-right: 32px;
+        gap: 200px;
+    }
+
+    .guide {
+        flex-direction: column;
+    }
+
+    .guide:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .guide__content {
+        margin: 214px 135px 69px 100px;
+    }
+
+    .guide:nth-child(even) > .guide__content {
+        margin: 214px 135px 69px 100px;
+    }
+
+    .guide__number {
+        top: -135px;
+        left: -20px;
+    }
+
+    .guide__title {
+        font-weight: 600;
+        font-size: 64px;
+        max-width: 550px;
+    }
+
+    .guide__text {
+        line-height: 178%;
+        width: 725px;
+    }
+
+    .guide__img {
+        width: 860px;
+        height: 982px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 78px;
+    }
+
+    .footer {
+        margin: 77px 32px 72px 32px;
+        gap: 57px;
+    }
+    
+    .company__text {
+        font-size: 16px;
+    }
+    
+    .copyright {
+        font-size: 16px;
+    }
+    
+    .footer__links > a {
+        font-size: 16px;
     }
 }
