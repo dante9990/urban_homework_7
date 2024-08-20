@@ -273,3 +273,30 @@ a {
     line-height: 133%;
     color: #fbd784;
 }
+
+@media (max-width: 1536px) {
+
+    .main {
+        margin-left: 138px;
+        margin-right: 138px;
+        gap: 200px;
+    }
+
+    .guide__content {
+        margin: 205px 68px 43px 72px;
+    }
+
+    .guide:nth-child(even) > .guide__content {
+        margin: 172px 0 73px 183px;
+    }
+
+    .guide__number {
+        top: -164px;
+        left: -75px;
+    }
+
+    .guide__img {
+        width: 488px;
+        height: 765px;
+    }
+}
