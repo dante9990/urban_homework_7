@@ -265,6 +265,10 @@ a {
     opacity: 0.5;
 }
 
+.mobile {
+    display: none;
+}
+
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -333,8 +337,6 @@ a {
     }
 
     .main {
-        display: flex;
-        flex-direction: column;
         margin-left: 32px;
         margin-right: 32px;
     }
@@ -430,8 +432,6 @@ a {
         font-size: 16px;
     }
 
-    
-
     .guide__content {
         margin: 161px 35px 45px 35px;
     }
@@ -480,5 +480,106 @@ a {
     .copyright {
         font-size: 14px;
         width: 293px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        background-position: 50%;
+    }
+
+    .slider {
+        display: grid;
+        padding: 57px 28px 694px 20px;
+        grid-template-columns: 1fr 0.5fr 0.3fr;
+        grid-template-rows: 0.3fr 1fr;
+        grid-row-gap: 35px;
+        grid-template-areas: ". s s" "sc sc sp";
+    }
+
+    .social {
+        transform: rotate(0);
+        grid-area: s;
+        min-width: 146px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .social__icon {
+        transform: rotate(0);
+    }
+
+    .slider__content {
+        grid-area: sc;
+        max-width: 334px;
+    }
+
+    .slider__title {
+        line-height: 159%;
+    }
+
+    .slider__pages {
+        grid-area: sp;
+    }
+
+    .wrapper {
+        top: 935px;
+        background: linear-gradient(180deg, rgba(11.48, 29.32, 38.25, 0) 0%, #0b1d26 8%);
+    }
+
+    .main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .guide__content {
+        margin: 86px 0px 44px 0px;
+    }
+
+    .guide:nth-child(even) > .guide__content {
+        margin: 86px 0px 44px 0px;
+    }
+
+    .guide__number {
+        top: -90px;
+        left: -20px;
+        font-size: 140px;
+    }
+
+    .guide__title {
+        font-weight: 600;
+        font-size: 30px;
+        max-width: 440px;
+    }
+
+    .guide__text {
+        font-size: 16px;
+        line-height: 200%;
+        width: 440px;
+    }
+
+    .guide__img {
+        width: 440px;
+        height: 509px;
+    }
+
+    .footer {
+        margin: 114px 20px 57px 20px;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .company__text {
+        min-width: 440px;
+        font-size: 12px;
+    }
+
+    .copyright {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        margin-top: 0;
     }
 }
