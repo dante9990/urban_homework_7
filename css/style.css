@@ -19,6 +19,10 @@ a {
     background: url("../img/BG_img.jpg") no-repeat;
 }
 
+.burger__menu {
+    display: none;
+}
+
 .header__menu {
     display: flex;
     padding: 64px 69px 0 91px;
@@ -400,6 +404,60 @@ a {
 }
 
 @media (max-width: 768px) {
+    .burger__menu {
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 68px;
+        padding: 64px 67px 65px 61px;
+        top: -1000px;
+        transition: top 0.6s;
+        z-index: 3;
+    }
+
+    .burger__social {
+        display: none;
+    }
+
+    .active {
+        top: 0;
+    }
+
+    .burger__header,
+    .burger__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger__menu > .burger__header > a > .logo {
+        color: #0b1d26;
+    }
+
+    .close {
+        width: 37px;
+        height: 37px;
+        background: url("../img/icons/close.svg") no-repeat;
+    }
+
+    .nav_mobile {
+        display: flex;
+        gap: 41px;
+    }
+
+    .nav_mobile > a {
+        color: #0b1d26;
+    }
+
+    .burger__menu > .burger__links > .account {
+        display: flex;
+    }
+
+    .burger__menu > .burger__links > .account > a {
+        color: #0b1d26;
+    }
+
     .nav {
         display: none;
     }
@@ -484,6 +542,20 @@ a {
 }
 
 @media (max-width: 480px) {
+    .burger__menu {
+        gap: 66px;
+        padding: 64px 41px 57px 38px;
+    }
+
+    .nav_mobile {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .burger__menu > .burger__links > .account {
+        align-self: start;
+    }
+
     .header {
         background-position: 50%;
     }
@@ -572,6 +644,130 @@ a {
 
     .company__text {
         min-width: 440px;
+        font-size: 12px;
+    }
+
+    .copyright {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .burger__menu {
+        gap: 48px;
+        padding: 50px 24px 50px 24px;
+    }
+    
+    .burger__links {
+        flex-direction: column;
+        gap: 40px;
+        max-width: 136px;
+    }
+
+    .burger__social {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transform: rotate(90deg);
+        top: 240px;
+        left: 204px;
+        min-width: 160px;
+    }
+
+    .burger__social > span {
+        color: #0b1d26;
+    }
+
+    .burger__icon {
+        width: 20px;
+        height: 20px;
+        transform: rotate(-90deg);
+    }
+
+    .inst_black {
+        background: url('../img/icons/inst_black.svg') no-repeat;
+        background-position: center;
+    }
+
+    .twit_black {
+        background: url('../img/icons/twit_black.svg') no-repeat;
+        background-position: center;
+    }
+
+
+    .header__menu {
+        padding: 61px 10px 0 10px;
+    }
+
+    .slider {
+        padding: 68px 10px 694px 10px;
+    }
+
+    .slider__content {
+        grid-area: sc;
+        max-width: 300px;
+    }
+
+    .section__title {
+        font-size: 12px;
+        letter-spacing: 0.5em;
+        font-weight: 600;
+        min-width: 176px;
+    }
+
+    .slider__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+    }
+    .slider__scroll {
+        margin-top: 136px;
+    }
+    .slider__pages {
+        margin-top: 125px;
+    }
+    .wrapper {
+        top: 717px;
+        background: linear-gradient(180deg, rgba(11.48, 29.32, 38.25, 0) 0%, #0b1d26 5%);
+    }
+    .main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .guide__number {
+        left: -10px;
+    }
+
+    .guide__title {
+        font-size: 24px;
+        max-width: 300px;
+    }
+
+    .guide__text {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .guide__img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .footer {
+        margin: 79px 10px 26px 10px;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .company__text {
+        min-width: 300px;
         font-size: 12px;
     }
 
