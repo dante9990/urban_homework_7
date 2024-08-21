@@ -286,7 +286,7 @@ a {
     color: #fbd784;
 }
 
-@media (max-width: 1536px) {
+@media (max-width: 1652px) {
     .main {
         margin-left: 138px;
         margin-right: 138px;
@@ -311,7 +311,7 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
     .header__menu {
         padding: 64px 62px 0 61px;
     }
@@ -403,7 +403,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .burger__menu {
         background: #fff;
         position: absolute;
@@ -541,7 +541,7 @@ a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .burger__menu {
         gap: 66px;
         padding: 64px 41px 57px 38px;
@@ -656,7 +656,7 @@ a {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 479px) {
     .burger__menu {
         gap: 48px;
         padding: 50px 24px 50px 24px;
